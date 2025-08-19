@@ -1,0 +1,82 @@
+/* Global */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  margin-top: 70px; /* for fixed navbar */
+  line-height: 1.7;
+}
+
+/* Navbar */
+.navbar {
+  transition: background 0.3s ease, padding 0.3s ease;
+}
+.navbar-brand {
+  font-weight: 700;
+}
+.nav-link {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.nav-link:hover {
+  transform: translateY(-2px);
+  color: #ffc107 !important;
+}
+
+/* Page Header */
+.page-header {
+  min-height: 40vh;
+  background: linear-gradient(to right, #0d6efd, #6610f2);
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  animation: fadeDown 1s ease;
+}
+
+/* Images */
+.zoom-img {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+}
+.zoom-img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 1s ease forwards;
+}
+.fade-in:nth-child(1) { animation-delay: 0.2s; }
+.fade-in:nth-child(2) { animation-delay: 0.4s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+footer {
+  background: #111;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}

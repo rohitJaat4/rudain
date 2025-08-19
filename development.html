@@ -5,14 +5,16 @@
   <title>Development - Rudain Village</title>
   <meta name="description" content="Explore the development journey of Rudain Village in Bareilly, UP—covering infrastructure upgrades, digital initiatives, and community empowerment.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- ✅ Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/development.css">
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Rudain Village</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">🌿 Rudain Village</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,71 +30,99 @@
     </div>
   </nav>
 
+<!-- Page Header -->
+  <header class="page-header text-center text-white d-flex align-items-center">
+    <div class="container">
+      <h1 class="fw-bold display-5">📈 Development in Rudain</h1>
+      <p class="lead">🌱 “Development is not a destination—it’s the courage to keep improving, even when no one’s watching.”
+</p>
+    </div>
+  </header>
+
   <!-- Development Section -->
-  <div class="container mt-4">
-    <h2>🚀 Development in Rudain</h2>
-    <p>Rudain Village is undergoing a remarkable transformation, driven by community efforts, government schemes, and digital innovation. Here's a look at the key development initiatives:</p>
+  <div id="dev-sections" class="container py-5">
+    <p class="text-center fs-5 mb-5 fade-in">Rudain Village is undergoing a remarkable transformation, driven by community efforts, government schemes, and digital innovation. Here's a look at the key development initiatives:</p>
 
-    <div class="row mt-4">
-      <!-- Education & Skill Development -->
-      <div class="col-md-6">
-        <h5>🎓 Education & Skill Development</h5>
-        <p>New schools, coaching centers, and vocational training programs are empowering youth with knowledge and practical skills.</p>
+    <!-- Education -->
+    <div class="row g-5 align-items-center">
+      <div class="col-md-6 d-flex fade-in-left">
+        <div>
+          <h4>🎓 Education & Skill Development</h4>
+          <p>New schools, coaching centers, and vocational training programs are empowering youth with knowledge and practical skills.</p>
+        </div>
       </div>
-      <div class="col-md-6">
-        <img src="images/education_dev.jpg" alt="Education Development in Rudain" class="img-fluid rounded shadow-sm">
+      <div class="col-md-6 fade-in-right">
+        <img src="ChatGPT Image Aug 17, 2025, 02_24_17 PM.png" alt="Education Development in Rudain" class="img-fluid rounded shadow-lg zoom-img">
       </div>
     </div>
 
-    <div class="row mt-4">
-      <!-- Agriculture Modernization -->
-      <div class="col-md-6">
-        <h5>🌾 Agriculture Modernization</h5>
-        <p>Farmers are adopting modern techniques like drip irrigation, organic farming, and solar-powered equipment to boost productivity.</p>
+    <!-- Agriculture -->
+    <div class="row g-5 align-items-center flex-md-row-reverse mt-5">
+      <div class="col-md-6 d-flex fade-in-right">
+        <div>
+          <h4>🌾 Agriculture Modernization</h4>
+          <p>Farmers are adopting modern techniques like drip irrigation, organic farming, and solar-powered equipment to boost productivity.</p>
+        </div>
       </div>
-      <div class="col-md-6">
-        <img src="images/agriculture.jpg" alt="Modern Farming in Rudain" class="img-fluid rounded shadow-sm">
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <!-- Digital Connectivity -->
-      <div class="col-md-6">
-        <h5>📡 Digital Connectivity</h5>
-        <p>High-speed internet and mobile networks are connecting Rudain to the world, enabling e-learning, e-governance, and online services.</p>
-      </div>
-      <div class="col-md-6">
-        <img src="images/digital.jpg" alt="Digital Connectivity in Rudain" class="img-fluid rounded shadow-sm">
+      <div class="col-md-6 fade-in-left">
+        <img src="ChatGPT Image Aug 17, 2025, 02_24_17 PM.png" alt="Modern Farming in Rudain" class="img-fluid rounded shadow-lg zoom-img">
       </div>
     </div>
 
-    <div class="row mt-4">
-      <!-- Women Empowerment -->
-      <div class="col-md-6">
-        <h5>👩‍🌾 Women Empowerment</h5>
-        <p>Self-help groups and local initiatives are helping women start businesses, participate in governance, and gain financial independence.</p>
+    <!-- Digital -->
+    <div class="row g-5 align-items-center mt-5">
+      <div class="col-md-6 d-flex fade-in-left">
+        <div>
+          <h4>📡 Digital Connectivity</h4>
+          <p>High-speed internet and mobile networks are connecting Rudain to the world, enabling e-learning, e-governance, and online services.</p>
+        </div>
       </div>
-      <div class="col-md-6">
-        <img src="images/women.jpg" alt="Women Empowerment in Rudain" class="img-fluid rounded shadow-sm">
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <!-- Environmental Sustainability -->
-      <div class="col-md-6">
-        <h5>🌱 Environmental Sustainability</h5>
-        <p>Tree plantation drives, waste management systems, and eco-awareness campaigns are making Rudain greener and cleaner.</p>
-      </div>
-      <div class="col-md-6">
-        <img src="images/environment.jpg" alt="Sustainability in Rudain" class="img-fluid rounded shadow-sm">
+      <div class="col-md-6 fade-in-right">
+        <img src="ChatGPT Image Aug 17, 2025, 02_24_17 PM.png" alt="Digital Connectivity in Rudain" class="img-fluid rounded shadow-lg zoom-img">
       </div>
     </div>
   </div>
 
   <!-- Footer -->
-  <footer class="text-center mt-5 p-3 bg-dark text-white">
+  <footer class="text-center py-3 bg-dark text-white fade-in">
     &copy; 2025 Rudain Village | Designed by Rohit
   </footer>
 
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="btn btn-warning shadow-lg">↑</button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // ✅ Smooth Scroll
+    document.querySelectorAll('.smooth-scroll').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // ✅ Scroll Animations
+    const fadeElements = document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .fade-in-up, .fade-in-down');
+    window.addEventListener('scroll', () => {
+      fadeElements.forEach(el => {
+        const pos = el.getBoundingClientRect().top;
+        if (pos < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    });
+
+    // ✅ Back to Top Button
+    const backToTop = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    });
+    backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  </script>
 </body>
 </html>

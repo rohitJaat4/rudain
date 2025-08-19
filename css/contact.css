@@ -1,0 +1,156 @@
+/* ---------------------------
+   Global Styles
+---------------------------- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #e6ebf0);
+  color: #333;
+  line-height: 1.6;
+  transition: background 0.5s ease-in-out;
+}
+
+h2, h4, h5 {
+  font-weight: 700;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0d6efd;
+}
+
+/* ---------------------------
+   Navbar
+---------------------------- */
+.navbar {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  margin: 0 6px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: translateY(-2px);
+  color: #ffc107 !important;
+}
+
+/* ---------------------------
+   Forms
+---------------------------- */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+form:hover {
+  transform: translateY(-5px);
+}
+
+.form-control, .form-select, textarea {
+  border-radius: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus, textarea:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 10px rgba(13,110,253,0.3);
+}
+
+/* Buttons */
+button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.btn-primary:hover {
+  background: #0b5ed7;
+  transform: scale(1.05);
+}
+
+.btn-success:hover {
+  background: #198754;
+  transform: scale(1.05);
+}
+
+/* ---------------------------
+   Office Details & Map
+---------------------------- */
+.col-lg-5 {
+  animation: fadeInRight 1.2s ease both;
+}
+
+.ratio iframe {
+  border-radius: 12px;
+  filter: grayscale(20%) contrast(1.1);
+  transition: all 0.5s ease;
+}
+
+.ratio iframe:hover {
+  filter: grayscale(0%) contrast(1);
+  transform: scale(1.03);
+}
+
+/* ---------------------------
+   Footer
+---------------------------- */
+footer {
+  background: #111;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  animation: fadeInUp 1.2s ease both;
+}
+
+/* ---------------------------
+   Animations
+---------------------------- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Smooth Fade for forms */
+form {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+form:nth-child(1) {
+  animation-delay: 0.3s;
+}
+form:nth-child(2) {
+  animation-delay: 0.6s;
+}
