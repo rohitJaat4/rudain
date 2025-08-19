@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact & Feedback - Rudain Village</title>
+  <meta name="description" content="Reach out to Rudain Village team or leave your feedback. Connect via email or Instagram.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Rudain Village</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="infrastructure.html">Infrastructure</a></li>
+          <li class="nav-item"><a class="nav-link" href="development.html">Development</a></li>
+          <li class="nav-item"><a class="nav-link" href="facilities.html">Facilities</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact & Feedback Section -->
+  <div class="container mt-5 mb-5">
+    <h2>✉️ Contact Us & 📋 Feedback</h2>
+    <p>Have questions or suggestions? Fill out the contact form or let us know your thoughts with our feedback form below.</p>
+
+    <div class="row mt-4">
+      <!-- Forms Column -->
+      <div class="col-lg-7">
+        
+        <!-- Contact Form -->
+        <div class="mb-5">
+          <h4>Contact Form</h4>
+          <form action="#" method="POST">
+            <div class="mb-3">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="contact-name" name="contact_name" placeholder="e.g. Priya Sharma" required>
+            </div>
+            <div class="mb-3">
+              <label for="contact-email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="contact-email" name="contact_email" placeholder="e.g. priya@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="contact-subject" class="form-label">Subject</label>
+              <select class="form-select" id="contact-subject" name="contact_subject" required>
+                <option value="" disabled selected>Choose a topic</option>
+                <option>General Inquiry</option>
+                <option>Infrastructure & Development</option>
+                <option>Events & Programs</option>
+                <option>Suggestions</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="contact-message" class="form-label">Your Message</label>
+              <textarea class="form-control" id="contact-message" name="contact_message" rows="4" placeholder="Type your message here…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Feedback Form -->
+        <div>
+          <h4>Feedback Form</h4>
+          <form action="#" method="POST">
+            <div class="mb-3">
+              <label for="feedback-name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="feedback-name" name="feedback_name" placeholder="e.g. Ravi Kumar" required>
+            </div>
+            <div class="mb-3">
+              <label for="feedback-email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="feedback-email" name="feedback_email" placeholder="e.g. ravi@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="feedback-rating" class="form-label">Your Rating</label>
+              <select class="form-select" id="feedback-rating" name="feedback_rating" required>
+                <option value="" disabled selected>Rate us 1–5</option>
+                <option>1 – Needs Improvement</option>
+                <option>2</option>
+                <option>3 – Good</option>
+                <option>4</option>
+                <option>5 – Excellent</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="feedback-comments" class="form-label">Comments</label>
+              <textarea class="form-control" id="feedback-comments" name="feedback_comments" rows="4" placeholder="Your feedback helps us improve…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Submit Feedback</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Details & Map Column -->
+      <div class="col-lg-5">
+        <h5>📍 Our Office</h5>
+        <p>
+          Gram Panchayat Bhawan,<br>
+          Rudain, (BUDAUN) District,<br>
+          Uttar Pradesh, India - 243724
+        </p>
+        <p>
+          <strong>Phone:</strong> +91 9675313941<br>
+          <strong>Email:</strong> <a href="mailto:contact@rudainvillage.in">contact@rudainvillage.in</a>
+        </p>
+
+        <h5 class="mt-4">🔗 Follow Us</h5>
+        <p>
+          <a href="https://www.instagram.com/your_profile" target="_blank" rel="noopener">
+            📸 @your_profile
+          </a>
+        </p>
+
+        <!-- Google Map Embed -->
+        <div class="ratio ratio-4x3 rounded shadow-sm mt-3">
+          <iframe
+            src="https://maps.app.goo.gl/j1AkuGwE5B3TuxKq8"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center mt-5 p-3 bg-dark text-white">
+    &copy; 2025 Rudain Village | Designed by Rohit
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
